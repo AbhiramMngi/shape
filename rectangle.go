@@ -25,5 +25,14 @@ func (rectangle Rectangle) FindArea() float64 {
 }
 
 func (rectangle Rectangle) FindPerimeter() float64 {
-	return 0.0
+	if rectangle.length == 1 && rectangle.width == 1 {
+		return 4.0
+	}
+	if rectangle.length == 1 {
+		return 2 + 2*rectangle.width
+	}
+	if rectangle.width == 1 {
+		return 2 + 2*rectangle.length
+	}
+	return (rectangle.length + rectangle.width) * 2
 }

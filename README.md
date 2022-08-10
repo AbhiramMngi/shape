@@ -1,8 +1,8 @@
-# Square 
+# Square
 
 ## Problem Statement
 
-find the area and perimeter of a rectangle and a square.
+Find the area and perimeter of a rectangle and a square.
 
 ## Environment
 
