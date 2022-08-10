@@ -5,6 +5,9 @@ type Square struct {
 }
 
 func NewSquare(side float64) Square {
+	if side <= 0 {
+		panic("square side should be positive")
+	}
 	return Square{side}
 }
 
