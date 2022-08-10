@@ -11,10 +11,16 @@ func NewSquare(side float64) Square {
 	return Square{side}
 }
 
-func (square Square) FindPerimeter() float64 {
-	return 0.0
+func (square Square) FindArea() float64 {
+	if square.side == 1.0 {
+		return 1.0
+	}
+	return square.side * square.side
 }
 
-func (square Square) FindArea() float64 {
-	return 0.0
+func (square Square) FindPerimeter() float64 {
+	if square.side == 1.0 {
+		return 4.0
+	}
+	return square.side * 4
 }
